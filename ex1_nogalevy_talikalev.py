@@ -1,4 +1,6 @@
 def question1():
+    '''question 1: gets 2 numbers from user
+        and return the number of digits they have in common'''
     counter = 0
     n1, n2 = input("Please enter 2 numbers: ").split()
     n1 = [int(x) for x in n1]
