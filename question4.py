@@ -1,18 +1,20 @@
-def question4():
-    '''gets input and print it after ROT-13'''
-    inp = input("enter...: ")
-    inp = [calc_letter(x) for x in inp]
-    inp = "".join(inp)
-    print(inp)
+def question2():
+    lst = []
+    while True:
+        req = input("enter your request: ")
+        if req == "i":
+            str = input("Enter string: ")
+            str = str[1:]
+            lst.append(str)
+        elif req == "e" and lst:
+            lst.pop()
+        elif req == "p":
+            for i, s in enumerate(lst):
+                print("{} {}".format(i, s))
 
-def calc_letter(x):
-    '''gets char - if the char is a letter A-Z or a-z: rotate 13'''
-    output = 0
-    if not x.isalpha(): return x
-    if x.isupper(): output += (ord("A") + ((ord(x) - ord("A") + 13) % 26))
-    elif x.islower(): output += (ord("a") + ((ord(x) - ord("a") + 13) % 26))
-    return chr(output)
+        else:
+            return
 
-question4()
 
+question2()
 # Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!
