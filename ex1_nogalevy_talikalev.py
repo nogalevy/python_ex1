@@ -48,7 +48,7 @@ def question3():
         temp = geneList[i]
         temp = temp.split(',')
         if float(temp[-1]) < 0.1:
-            for j in range(0, len(temp) - 1):
+            for j in range(0, len(temp) - 2):
                 bestGenes.append(temp[j])
 
     bestGenes = list(dict.fromkeys(bestGenes))
