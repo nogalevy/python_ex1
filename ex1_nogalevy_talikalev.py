@@ -19,3 +19,21 @@ question1()
 
 
 #    option = input("Please enter request: ")
+
+def question3():
+    '''question 3: receives list of genes and returns list of
+        genes where the last number is less than 0.1'''
+    geneList = input("Please enter list of genes: ").split()
+    bestGenes = []
+    for i in range(0, len(geneList)):
+        temp = geneList[i]
+        temp = temp.split(',')
+        if float(temp[-1]) < 0.1:
+            for j in range(0, len(temp) - 1):
+                bestGenes.append(temp[j])
+
+    bestGenes = list(dict.fromkeys(bestGenes))
+    return bestGenes
+
+l1 = question3()
+print(l1)
