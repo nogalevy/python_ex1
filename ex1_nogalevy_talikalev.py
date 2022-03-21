@@ -1,7 +1,8 @@
 
 def question1():
     '''question 1: gets 2 numbers from user
-        and return the number of digits they have in common'''
+        and returns the number of times the first number's digits appear
+        in the second number'''
     counter = 0
     n1, n2 = input("Please enter 2 numbers: ").split()
     n1 = [int(x) for x in n1]
@@ -15,7 +16,7 @@ def question1():
 ########################################################################
 
 def question2():
-    ''' Program acts as a stack:
+    ''' Program acts as a stack with the following operations:
         i = insert new
         e = the last item- list[-1]
         p = print
@@ -57,7 +58,8 @@ def question3():
 ########################################################################
 
 def question4():
-    '''gets input and print it after ROT-13'''
+    '''gets encrypted message and prints the decoded message after
+        applying ROT-13'''
     inp = input("Enter message to decode: ")
     inp = [calc_letter(x) for x in inp]
     inp = "".join(inp)
