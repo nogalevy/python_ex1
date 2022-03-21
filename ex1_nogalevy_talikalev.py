@@ -1,7 +1,32 @@
+'''
+Written by: Noga Levy (ID: 315260927, login: levyno)
+             and Tali Kalev (ID: 208629691, login: talikal)
+
+Goal of the Program: The program gets from user an integer between 1 to 4.
+                    The program then runs the function associated with the
+                    number.
+                    1: gets 2 numbers from user
+                        and prints the number of times the first number's digits appear
+                        in the second number
+                    2: Program acts as a stack with the following operations:
+                        i = insert new
+                        e = the last item- list[-1]
+                        p = print
+                        else = exit
+                        input: one of the above operations
+                        output: if p is chosen, the program prints the contents
+                        of the stack in a numbered column
+                    3: receives list of genes and prints list of
+                        genes where the last number is less than 0.1
+                    4: gets encrypted message and prints the decoded message after
+                        applying ROT-13 algorithm
+'''
+
+########################################################################
 
 def question1():
     '''question 1: gets 2 numbers from user
-        and returns the number of times the first number's digits appear
+        and prints the number of times the first number's digits appear
         in the second number'''
     counter = 0
     n1, n2 = input("Please enter 2 numbers: ").split()
@@ -41,7 +66,7 @@ def question2():
 ########################################################################
 
 def question3():
-    '''question 3: receives list of genes and returns list of
+    '''question 3: receives list of genes and prints list of
         genes where the last number is less than 0.1'''
     geneList = input("Please enter list of genes: ").split()
     bestGenes = []
